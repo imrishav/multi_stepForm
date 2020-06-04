@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  body {
+    padding: 1rem;
+    font-family: 'playfair display';
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .infobox {
+    position: fixed;
+    top: -10rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 4rem;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    transition: 1s ease;
+  }
+  
+  .holder {
+    padding: 10vh 0;
+    min-width: 100%;
+    background-color: peachpuff;
+    pointer-events: none;
+    opacity: .2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .holder .form {
+    max-width: 80vw;
+    min-width: 80vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+  }
+  .holder .form__subcaption {
+    opacity: .6;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .holder .form__caption {
+    font-size: 3rem;
+  }
+  .holder .form__input {
+    padding-left: 20%;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    min-height: 4rem;
+    background-color: transparent;
+    border: 1px solid #000;
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin: 2rem 0 0 0;
+  }
+  
+  .btn {
+    padding: 2rem 4rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    margin: 2rem 0 0 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #000;
+    color: peachpuff;
+  }
+  
+  .back-1,
+  .back-2,
+  .back-3 {
+    margin-right: 1rem;
+  }
+  
+  .active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .progress-container {
+    width: 100vw;
+    height: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+  }
+  .progress-container .progress {
+    background-color: #C0BD91;
+    height: 100%;
+    position: absolute;
+    width: 0%;
+    transition: 1s ease;
+  }
+  

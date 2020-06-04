@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress"></div>
+    </div>
+    <section class="active holder step-1" id="1">
+      <div class="form">
+        <div class="form__info">
+          <h4 class="form__subcaption">Step 1</h4>
+          <h1 class="form__caption">
+            What's your name, e-mail adress and superpower?
+          </h1>
+        </div>
+        <div class="form__input">
+          <input
+            type="text"
+            placeholder="Elon Musk"
+            class="form__input-field"
+          />
+          <input
+            type="text"
+            placeholder="yourname@youradress.de"
+            class="form__input-field"
+          />
+          <input
+            type="text"
+            placeholder="Be more creative than 'flying' or 'invisibility'"
+            class="form__input-field"
+          />
+          <button class="btn next-1">next</button>
+        </div>
+      </div>
+    </section>
+    <section class=" holder step-2" id="2">
+      <div class="form">
+        <div class="form__info">
+          <h4 class="form__subcaption">Step 2</h4>
+          <h1 class="form__caption">
+            In what open position do you want to work in?
+          </h1>
+        </div>
+        <div class="form__input">
+          <input type="text" class="form__input-field" />
+          <button class="btn back-1">back</button>
+          <button class="btn next-2">next</button>
+        </div>
+      </div>
+    </section>
+    <section class=" holder step-3" id="3">
+      <div class="form">
+        <div class="form__info">
+          <h4 class="form__subcaption">Step 3</h4>
+          <h1 class="form__caption">
+            Where do you see yourself in 5 years?
+          </h1>
+        </div>
+        <div class="form__input">
+          <input
+            type="text"
+            placeholder="On a fancy beach in Bali?"
+            class="form__input-field"
+          />
+          <button class="btn back-2">back</button>
+          <button class="btn next-3">next</button>
+        </div>
+      </div>
+    </section>
+    <section class=" holder step-4" id="4">
+      <div class="form">
+        <div class="form__info">
+          <h4 class="form__subcaption">Step 4</h4>
+          <h1 class="form__caption">
+            How do you spend your free time?
+          </h1>
+        </div>
+        <div class="form__input">
+          <input
+            type="text"
+            placeholder="Don't say Netflix and chill"
+            class="form__input-field"
+          />
+          <button class="btn back-3">back</button>
+          <button class="btn submit">submit</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="infobox">
+      message sent!
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
